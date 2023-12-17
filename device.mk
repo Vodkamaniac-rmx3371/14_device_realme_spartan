@@ -168,6 +168,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# Dolby Config File
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/dolby/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/dolby/vendor,$(TARGET_COPY_OUT_VENDOR))
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
