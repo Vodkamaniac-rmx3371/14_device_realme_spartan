@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spartan device
 $(call inherit-product, device/realme/spartan/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Horizondroid stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := cherish_spartan
+PRODUCT_NAME := aosp_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -35,14 +35,11 @@ BUILD_FINGERPRINT := realme/RMX3371/RE54E4L1:14/UP1A.230620.001/S.14bef93_5a18-2
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# Cherish
-CHERISH_BUILD_TYPE := OFFICIAL
-CHERISH_MAINTAINER := Vodkamaniac
-CHERISH_CHIPSET := Snapdragon  870
-CHERISH_BATTERY := 5000mAh
-CHERISH_DISPLAY := 2400x1080
 
-# Cherish Flags
+# Horizondroid
+HORIZON_MAINTAINER := Vodkamaniac
+
+# Horizon  Flags
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true

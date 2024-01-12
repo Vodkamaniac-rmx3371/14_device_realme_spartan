@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_spartan.mk
+    $(LOCAL_DIR)/aosp_spartan.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_spartan-user \
-    cherish_spartan-userdebug \
-    cherish_spartan-eng
+    aosp_spartan-user \
+    aosp_spartan-userdebug \
+    aosp_spartan-eng
