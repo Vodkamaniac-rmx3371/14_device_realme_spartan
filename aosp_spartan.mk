@@ -38,6 +38,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Horizondroid
 HORIZON_MAINTAINER := Vodkamaniac
+CUSTOM_BUILD_TYPE := Official
 
 # Horizon  Flags
 EXTRA_UDFPS_ANIMATIONS := true
