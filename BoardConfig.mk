@@ -237,3 +237,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/realme/spartan/BoardConfigVendor.mk
+
+# Flag
+ALLOW_MISSING_DEPENDENCIES := true
+SELINUX_IGNORE_NEVERALLOWS := true
